@@ -46,9 +46,6 @@ export function Footer() {
                   {contact.address}
                 </a>
               </li>
-              <li className="pt-2 text-sm">
-                {contact.certification}
-              </li>
             </ul>
           </div>
 
