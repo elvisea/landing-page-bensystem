@@ -2,7 +2,7 @@
 
 Este projeto é uma landing page moderna para a Bensystem, empresa especializada em sistemas de segurança eletrônica, alarmes e câmeras de monitoramento.
 
-![Bensystem Preview](/og-image.png)
+![Bensystem Preview](/public/og-image.png)
 
 ## Sobre o Projeto
 
