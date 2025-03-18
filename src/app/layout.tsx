@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.bensystem.com.br"),
   title: "Bensystem - Sistemas de Segurança Eletrônica",
   description: "Soluções completas em segurança eletrônica para residências e empresas. Câmeras, alarmes e monitoramento 24h.",
   keywords: "segurança eletrônica, câmeras de segurança, alarmes, monitoramento 24h, automação residencial, controle de acesso, como funciona sistema de segurança",

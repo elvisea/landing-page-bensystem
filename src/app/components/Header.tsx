@@ -50,9 +50,11 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-            <Button className="bg-blue-700 hover:bg-blue-800 text-white">
-              Orçamento
-            </Button>
+            <a href="#contact">
+              <Button className="bg-blue-700 hover:bg-blue-800 text-white">
+                Orçamento
+              </Button>
+            </a>
           </nav>
 
           {/* Menu Mobile */}

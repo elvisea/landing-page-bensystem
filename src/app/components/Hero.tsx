@@ -29,12 +29,14 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-white text-blue-900 hover:bg-blue-100 px-8"
-            >
-              {buttonText}
-            </Button>
+            <a href="#contact">
+              <Button
+                size="lg"
+                className="bg-white text-blue-900 hover:bg-blue-100 px-8"
+              >
+                {buttonText}
+              </Button>
+            </a>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 text-sm text-gray-300">
               <div className="flex items-center gap-2">
