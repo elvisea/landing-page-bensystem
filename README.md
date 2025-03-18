@@ -2,7 +2,7 @@
 
 Este projeto é uma landing page moderna para a Bensystem, empresa especializada em sistemas de segurança eletrônica, alarmes e câmeras de monitoramento.
 
-![Bensystem Preview](https://via.placeholder.com/1200x630/0A66C2/FFFFFF?text=Bensystem+Segurança+Eletrônica)
+![Bensystem Preview](/og-image.png)
 
 ## Sobre o Projeto
 
@@ -109,6 +109,27 @@ yarn build
 # ou
 pnpm build
 ```
+
+## Configuração
+
+### Variáveis de Ambiente
+
+O projeto utiliza variáveis de ambiente para informações de contato e redes sociais. Crie um arquivo `.env.local` na raiz do projeto com as seguintes variáveis:
+
+```
+# Informações de Contato
+NEXT_PUBLIC_COMPANY_EMAIL=contato@bensystem.com.br
+NEXT_PUBLIC_COMPANY_PHONE=(41) 3333-3333
+NEXT_PUBLIC_COMPANY_ADDRESS=Rua Marechal Deodoro, 500 - Centro, Curitiba
+NEXT_PUBLIC_COMPANY_WHATSAPP=5541997799375
+
+# Redes Sociais
+NEXT_PUBLIC_LINKEDIN_URL=https://www.linkedin.com/company/bensystem
+NEXT_PUBLIC_FACEBOOK_URL=https://www.facebook.com/bensystem
+NEXT_PUBLIC_INSTAGRAM_URL=https://www.instagram.com/bensystem
+```
+
+Estas variáveis podem ser modificadas sem alterar o código-fonte.
 
 ## Licença
 

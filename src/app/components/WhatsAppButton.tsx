@@ -1,10 +1,11 @@
 'use client'
 
 import { BsWhatsapp } from 'react-icons/bs'
+import { getWhatsAppLink } from '@/lib/env'
 
 export function WhatsAppButton() {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/+5541997799375?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20sistema%20de%20segurança%20da%20Bensystem', '_blank')
+    window.open(getWhatsAppLink(), '_blank')
   }
 
   return (

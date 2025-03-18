@@ -1,3 +1,12 @@
+import {
+  companyEmail,
+  companyPhone,
+  companyAddress,
+  linkedinUrl,
+  facebookUrl,
+  instagramUrl
+} from '@/lib/env';
+
 export function SchemaOrg() {
   const websiteSchema = {
     '@context': 'https://schema.org',
@@ -21,7 +30,7 @@ export function SchemaOrg() {
     description: 'Empresa especializada em sistemas de segurança eletrônica, alarmes e câmeras de monitoramento.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Rua Marechal Deodoro, 500',
+      streetAddress: companyAddress.split(' - ')[0],
       addressLocality: 'Curitiba',
       addressRegion: 'PR',
       postalCode: '80010-010',
@@ -29,15 +38,16 @@ export function SchemaOrg() {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+554133333333',
+      telephone: `+55${companyPhone.replace(/\D/g, '')}`,
       contactType: 'customer service',
       areaServed: 'BR',
-      availableLanguage: 'Portuguese'
+      availableLanguage: 'Portuguese',
+      email: companyEmail
     },
     sameAs: [
-      'https://www.facebook.com/bensystem',
-      'https://www.instagram.com/bensystem',
-      'https://www.linkedin.com/company/bensystem'
+      linkedinUrl,
+      facebookUrl,
+      instagramUrl
     ]
   }
 

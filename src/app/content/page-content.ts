@@ -1,11 +1,11 @@
 import {
-  Shield, // Sistemas de Alarme
-  Camera, // Câmeras de Segurança
-  Lock, // Controle de Acesso
-  Home, // Automação Residencial
-  Building2, // Segurança Empresarial
-  Smartphone, // Monitoramento Remoto
-  Eye, // Vigilância
+  Shield,
+  Camera,
+  Lock,
+  Home,
+  Building2,
+  Smartphone,
+  Eye,
 } from 'lucide-react'
 
 import {
@@ -21,6 +21,15 @@ import {
 } from 'react-icons/bs'
 
 import { IconType } from 'react-icons'
+
+import {
+  companyEmail,
+  companyPhone,
+  companyAddress,
+  linkedinUrl,
+  facebookUrl,
+  instagramUrl
+} from '@/lib/env';
 
 interface ServiceItem {
   title: string
@@ -163,27 +172,26 @@ export const content = {
     },
     contact: {
       title: "Contato",
-      email: "contato@bensystem.com.br",
-      phone: "(41) 3333-3333",
-      address: "Rua Marechal Deodoro, 500 - Centro, Curitiba",
-      certification: "CREA-PR 123456"
+      email: companyEmail,
+      phone: companyPhone,
+      address: companyAddress,
     },
     social: {
       title: "Redes Sociais",
       items: [
         {
           name: "LinkedIn",
-          url: "https://www.linkedin.com/company/bensystem",
+          url: linkedinUrl,
           Icon: BsLinkedin
         },
         {
           name: "Facebook",
-          url: "https://www.facebook.com/bensystem",
+          url: facebookUrl,
           Icon: BsFacebook
         },
         {
           name: "Instagram",
-          url: "https://www.instagram.com/bensystem",
+          url: instagramUrl,
           Icon: BsInstagram
         }
       ] as { name: string; url: string; Icon: IconType }[]

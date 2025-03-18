@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Bensystem",
     images: [
       {
-        url: "https://www.bensystem.com.br/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Bensystem - Sistemas de Segurança Eletrônica",
